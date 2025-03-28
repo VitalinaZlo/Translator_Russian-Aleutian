@@ -18,6 +18,8 @@
 
 ---
 
+### Так как файл с обученной моделью большой, скачать его можно Обученная модель доступна в разделе [Releases.](https://github.com/VitalinaZlo/Translator_Russian-Aleutian/releases/tag/v1.0.0)
+
 Код сохраняет модель в папку Marian_aleut_model и создаёт архив Marian_aleut_model.zip.
 
 ## Принцип работы кода
