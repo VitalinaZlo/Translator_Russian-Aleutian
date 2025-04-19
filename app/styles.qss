@@ -1,0 +1,349 @@
+/* ==========================================================================
+   Цветовая палитра (для справки)
+   --primary-color: #5C4033  Основной коричневый
+   --hover-color: #4A352B  Тёмный коричневый для hover
+   --accent-one-color: #E9B077  Персиковый
+   --accent-two-color: #87CEEB  Голубой
+   --light-background: rgba(255, 255, 255, 0.3)  Лёгкая белая подложка
+   --light-hover: rgba(255, 255, 255, 0.4)  Лёгкая белая подложка при наведении
+   --light-active: rgba(255, 255, 255, 0.5)  Лёгкая белая подложка для активного состояния
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Общие стили для всего приложения
+   ========================================================================== */
+QMainWindow,
+QWidget#aboutWidget,
+QWidget#copyContainer,
+QLabel,
+QScrollArea,
+QScrollArea > QWidget > QWidget {
+    background-color: transparent;
+}
+
+QLabel {
+    color: #5C4033;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   Стили для рамки окна
+   ========================================================================== */
+QWidget#borderWidget {
+    border: 2px solid #5C4033;
+}
+
+/* ==========================================================================
+   Стили для шапки
+   ========================================================================== */
+QWidget#headerWidget {
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 40px;
+}
+
+QLabel#titleLabel {
+    font-size: 16px;
+}
+
+QPushButton#closeButton,
+QPushButton#minimizeButton,
+QPushButton#maximizeButton {
+    background-color: #5C4033;
+    border: none;
+    border-radius: 15px;
+    color: #E9B077;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton#closeButton:hover,
+QPushButton#minimizeButton:hover,
+QPushButton#maximizeButton:hover {
+    background-color: #4A352B;
+}
+
+QFrame#separatorLine {
+    background-color: #5C4033;
+    height: 2px;
+}
+
+/* ==========================================================================
+   Стили для меню
+   ========================================================================== */
+QWidget#menuBar {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid #5C4033;
+}
+
+QPushButton#menuButton {
+    background-color: transparent;
+    border: none;
+    color: #5C4033;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+QPushButton#menuButton:checked {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+QPushButton#menuButton:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+/* ==========================================================================
+   Стили для выпадающего списка спецсимволов
+   ========================================================================== */
+QWidget#symbolsPopup {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 0;
+}
+
+QWidget#symbolsContainer {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+QPushButton#symbolButton {
+    background-color: #5C4033;
+    border: none;
+    border-radius: 10px;
+    color: #E9B077;
+    font-size: 12px;
+    font-weight: bold;
+    min-height: 16px;
+    min-width: 16px;
+    padding: 5px;
+}
+
+QPushButton#symbolButton:hover {
+    background-color: #4A352B;
+    border-color: #4A352B;
+}
+
+/* ==========================================================================
+   Стили для полей ввода и вывода
+   ========================================================================== */
+QTextEdit {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid #5C4033;
+    border-radius: 10px;
+    color: #5C4033;
+    font-size: 14px;
+    padding: 5px;
+}
+
+QTextEdit[readOnly="true"] {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid #5C4033;
+}
+
+QTextEdit QScrollBar:vertical {
+    background: transparent;
+    margin: 15px 0 15px 0;
+    width: 6px;
+}
+
+QTextEdit QScrollBar::handle:vertical {
+    background: #5C4033;
+    border-radius: 3px;
+    min-height: 20px;
+}
+
+QTextEdit QScrollBar::add-line:vertical,
+QTextEdit QScrollBar::sub-line:vertical {
+    background: transparent;
+    height: 15px;
+    subcontrol-origin: margin;
+}
+
+QTextEdit QScrollBar::add-line:vertical {
+    subcontrol-position: bottom;
+}
+
+QTextEdit QScrollBar::sub-line:vertical {
+    subcontrol-position: top;
+}
+
+QTextEdit QScrollBar::add-line:vertical:hover,
+QTextEdit QScrollBar::sub-line:vertical:hover {
+    background: transparent;
+}
+
+QTextEdit QScrollBar::add-page:vertical,
+QTextEdit QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+/* ==========================================================================
+   Стили для кнопок в секции переводчика
+   ========================================================================== */
+QPushButton#translateButton,
+QPushButton#clearButton {
+    background-color: #5C4033;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px;
+}
+
+QPushButton#translateButton {
+    color: #E9B077;
+}
+
+QPushButton#clearButton {
+    color: #87CEEB;
+}
+
+QPushButton#translateButton:hover,
+QPushButton#clearButton:hover {
+    background-color: #4A352B;
+}
+
+QPushButton#swapButton,
+QPushButton#copyButton {
+    background-color: transparent;
+    border: none;
+}
+
+QPushButton#swapButton:hover,
+QPushButton#copyButton:hover {
+    background-color: transparent;
+}
+
+/* ==========================================================================
+   Стили для подсказки копирования и сообщений об ошибках
+   ========================================================================== */
+QLabel#copyTooltip {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid #5C4033;
+    border-radius: 5px;
+    color: #5C4033;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 5px;
+}
+
+QLabel#errorLabel {
+    background-color: transparent;
+    color: #5C4033;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   Стили для истории переводов
+   ========================================================================== */
+QScrollArea {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+QScrollArea QScrollBar:vertical {
+    background: rgba(255, 255, 255, 0.3);
+    margin: 0;
+    width: 8px;
+}
+
+QScrollArea QScrollBar::handle:vertical {
+    background: #5C4033;
+    border-radius: 4px;
+    min-height: 20px;
+}
+
+QScrollArea QScrollBar::add-line:vertical,
+QScrollArea QScrollBar::sub-line:vertical {
+    background: transparent;
+    height: 0;
+}
+
+QScrollArea QScrollBar::add-page:vertical,
+QScrollArea QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+QScrollBar:horizontal {
+    background: transparent;
+    height: 8px;
+    margin: 0;
+}
+
+QScrollBar::handle:horizontal {
+    background: #5C4033;
+    border-radius: 4px;
+    min-width: 20px;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    background: transparent;
+    subcontrol-origin: margin;
+    width: 15px;
+}
+
+QScrollBar::add-line:horizontal {
+    subcontrol-position: right;
+}
+
+QScrollBar::sub-line:horizontal {
+    subcontrol-position: left;
+}
+
+QScrollBar::add-line:horizontal:hover,
+QScrollBar::sub-line:horizontal:hover {
+    background: transparent;
+}
+
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    background: none;
+}
+
+QWidget#historyCard {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 10px;
+    max-width: 150px;
+    min-width: 150px;
+    padding: 5px;
+}
+
+QWidget#historyCard:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+QLabel#historyLangLabel {
+    color: #5C4033;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QLabel#historyTextLabel {
+    color: #5C4033;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* ==========================================================================
+   Стили для секции "О проекте"
+   ========================================================================== */
+QLabel#aboutTitle {
+    color: #5C4033;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+QLabel#aboutText {
+    color: #5C4033;
+    font-size: 16px;
+    line-height: 1.5;
+}
