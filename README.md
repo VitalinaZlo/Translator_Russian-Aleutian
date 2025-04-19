@@ -1,7 +1,9 @@
 # Переводчик русский-алеутский
 
-![release](https://img.shields.io/github/v/release/VitalinaZlo/Translator_Russian-Aleutian)
+![release](https://img.shields.io/github/v/release/VitalinaZlo/Translator_Russian-Aleutian?color=purple)
 ![license](https://img.shields.io/github/license/VitalinaZlo/Translator_Russian-Aleutian)
+![Python](https://img.shields.io/badge/python-3.6%2B-blue)
+![Status](https://img.shields.io/badge/status-modification-green)
 
 **Translator: Russian-Aleutian** — это проект, который включает в себя разработку модели машинного перевода с русского на алеутский язык и графическое приложение для удобного перевода текстов. Модель основана на архитектуре MarianMT из библиотеки `transformers` и обучена на пользовательском наборе данных, содержащем пары переводов «русский — алеутский». Приложение построено с использованием `PyQt5` и предоставляет интуитивно понятный интерфейс для перевода, работы со спецсимволами и просмотра истории переводов.
 
@@ -19,7 +21,7 @@
   - Копирования переведённого текста в буфер обмена;
   - Отображения истории переводов;
   - Вставки спецсимволов (`x̂`, `ĝ` и `ẍ`);
-  - Секции "О проекте" с информацией о разработке.
+  - Вкладки «О проекте» с информацией о разработке.
 - Кастомизируемый интерфейс с поддержкой стилей через `styles.qss`.
 
 
@@ -76,7 +78,7 @@
     - А = западный диадект.
 
 ### Обученная модель
-- Модель должна быть сохранена в папку `Marian_aleut_model` и доступна в виде архива `Marian_aleut_model.zip` в разделе [Releases](https://github.com/VitalinaZlo/Translator_Russian-Aleutian/releases), так вышла слишком большой.
+- Модель должна быть сохранена в папку `Marian_aleut_model` и доступна в виде архива `Marian_aleut_model.zip` в разделе [Releases](https://github.com/VitalinaZlo/Translator_Russian-Aleutian/releases), так как вышла слишком большой.
 - **Лицензия**: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0).
 
 
@@ -160,7 +162,7 @@
 3. Кнопки для перевода, очистки полей, копирования текста;
 4. История переводов с возможностью выбора записи;
 5. Поддержка спецсимволов (`x̂`, `ĝ`, `ẍ`) через всплывающее меню;
-6. Секция "О проекте" с описанием;
+6. Вкладка «О проекте» с описанием;
 7. Кастомный дизайн с использованием SVG-иконок и стилей (`styles.qss`).
 
 
@@ -169,7 +171,7 @@
 ### Главное окно приложения
 ![Main window](app\screenshot\main_window.png)
 
-### Секция "О проекте"
+### Вкладка «О проекте»
 ![About project](app\screenshot\about_project.png)
 
 ### Окно с вплывающим меню спецсимволов
