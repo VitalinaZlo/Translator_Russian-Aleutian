@@ -170,13 +170,13 @@
 ## Скриншоты
 
 ### Главное окно приложения
-![Main window](screenshots\main_window.png)
+![Main window](screenshots/main_window.png)
 
 ### Вкладка «О проекте»
-![About project](screenshots\about_project.png)
+![About project](screenshots/about_project.png)
 
 ### Окно с вплывающим меню спецсимволов
-![Symbols](screenshots\symbols.png)
+![Symbols](screenshots/symbols.png)
 
 
 ## Лецензия
