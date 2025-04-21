@@ -45,6 +45,7 @@
     - `exchange_icon.svg`, `exchange_hover_icon.svg`: иконки для кнопки смены языков.
     - `requirements.txt`: зависимости для приложения.
 
+- **`screenshots\`**: файл для скриншотов приложения.
 - **`.gitignore`**: файл для исключения ненужных файлов.
 - **`LICENSE`**: лицензия проекта — GNU General Public License 3.0 (GPL-3.0).
 
@@ -169,13 +170,13 @@
 ## Скриншоты
 
 ### Главное окно приложения
-![Main window](app\screenshot\main_window.png)
+![Main window](screenshots\main_window.png)
 
 ### Вкладка «О проекте»
-![About project](app\screenshot\about_project.png)
+![About project](screenshots\about_project.png)
 
 ### Окно с вплывающим меню спецсимволов
-![Symbols](app\screenshot\symbols.png)
+![Symbols](screenshots\symbols.png)
 
 
 ## Лецензия

@@ -36,7 +36,7 @@ dist/
 app/models/
 
 # Исходные данные
-model-training\russian_aleut_dataset.csv
+model-training/russian_aleut_dataset.csv
 
 Aleut_Grammar.pdf
 
