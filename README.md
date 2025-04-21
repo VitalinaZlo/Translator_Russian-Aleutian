@@ -76,7 +76,7 @@
     - loc = локатив;
     - abl = аблатив;
     - E = восточный диалект;
-    - А = западный диадект.
+    - А = западный диалект.
 
 ### Обученная модель
 - Модель должна быть сохранена в папку `Marian_aleut_model` и доступна в виде архива `Marian_aleut_model.zip` в разделе [Releases](https://github.com/VitalinaZlo/Translator_Russian-Aleutian/releases), так как вышла слишком большой.
@@ -94,7 +94,7 @@
 Находится в разработке.
 
 ### Обучение модели
-1. Загрузите необходимые зависимости из файла `model-training\requirements.txt` в Google Colab
+1. Загрузите необходимые зависимости из файла `model-training\requirements.txt` и `model-training\russian_aleut_dataset.csv` в Google Colab
 
 2. Откройте `train_model.ipynb` в Google Colab:
     - Загрузите файл `russian_aleut_dataset.csv` в Colab;
