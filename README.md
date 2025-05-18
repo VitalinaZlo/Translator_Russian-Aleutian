@@ -1,9 +1,10 @@
 # Переводчик русский-алеутский
 
-![release](https://img.shields.io/github/v/release/VitalinaZlo/Translator_Russian-Aleutian?color=purple)
-![license](https://img.shields.io/github/license/VitalinaZlo/Translator_Russian-Aleutian)
-![Python](https://img.shields.io/badge/python-3.6%2B-blue)
-![Status](https://img.shields.io/badge/status-in_progress-green)
+![Release](https://img.shields.io/github/v/release/VitalinaZlo/Translator_Russian-Aleutian?style=flat-square&label=Release&color=purple)
+![License](https://img.shields.io/github/license/VitalinaZlo/Translator_Russian-Aleutian?style=flat-square&label=License&color=e5573e)
+![Python](https://img.shields.io/badge/build-3.6%2B-brightgreen?style=flat-square&label=Python&color=52b4e5)
+![Status](https://img.shields.io/badge/build-in_progress-green?style=flat-square&label=Status&color=acec22)
+
 
 **Translator: Russian-Aleutian** — это проект, который включает в себя разработку модели машинного перевода с русского на алеутский язык и графическое приложение для удобного перевода текстов. Модель основана на архитектуре MarianMT из библиотеки `transformers` и обучена на пользовательском наборе данных, содержащем пары переводов «русский — алеутский». Приложение построено с использованием `PyQt5` и предоставляет интуитивно понятный интерфейс для перевода, работы со спецсимволами и просмотра истории переводов.
 
